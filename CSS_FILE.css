@@ -11,6 +11,14 @@ main{
 p{
 color: white;
 }
+nav{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background-color: #00BFFF;
+    padding: 10px;
+    opacity: 0.9;
+}
 
 footer{
    
