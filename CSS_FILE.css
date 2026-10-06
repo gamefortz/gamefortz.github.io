@@ -17,9 +17,9 @@ nav{
     gap: 20px;
     background-color: #00BFFF;
     padding: 10px;
-    opacity: 0.9;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(8px);
 }
-
-footer{
-   
+a{
+    text-decoration: none;
 }
