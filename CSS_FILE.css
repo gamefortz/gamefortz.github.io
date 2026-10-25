@@ -23,3 +23,39 @@ nav{
 a{
     text-decoration: none;
 }
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #00bfff;
+    text-shadow: 0 0 10px #00bfff;
+}
+#S1{
+    text-align: center;
+}
+#welkm{
+    color: #FFFFFF;
+    text-shadow: 0 0 10px #008CFF;
+}
+#txt1{
+    color: #D6EFFF;
+}
+#slog1{
+    color: #00BFFF;
+    text-shadow: 0 0 8px #008CFF;
+}
+#infoxt{
+    color: #FFFFFF;
+    text-shadow: 0 0 10px #008CFF;
+}
+footer{
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(8px);
+     margin-top: 153px;
+
+}
