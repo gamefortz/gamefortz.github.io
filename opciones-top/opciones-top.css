@@ -2,3 +2,22 @@ body{
     background-image:url(../IMAGES/FONDO\ v3-CP.avif);
     background-size: 100% auto;
 }
+nav{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background-color: #00BFFF;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(8px);
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: 0.3s;
+}
+nav a:hover {
+    color: #00bfff;
+    text-shadow: 0 0 10px #00bfff;
+}

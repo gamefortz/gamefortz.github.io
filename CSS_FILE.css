@@ -8,7 +8,7 @@ body {
 main{
 
 }
-p{
+#TXT_F{
 color: white;
 }
 nav{
@@ -57,4 +57,7 @@ footer{
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(8px);
 
+}
+.lm:hover{
+background: rgba(255, 255, 255, 0.15);
 }

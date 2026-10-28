@@ -6,9 +6,115 @@
     <title>Document</title>
     <link rel="canonical" href="https://gamefortz.github.io/soporte/soporte.html">
     <link rel="stylesheet" href="soporte.css">
+    <link rel="icon" type="image/x-icon" href="../IMAGES/LOGO WEB V5.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../IMAGES/LOGO WEB V5.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../IMAGES/LOGO WEB V5.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../IMAGES/LOGO WEB V5.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="../IMAGES/LOGO WEB V5.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="../IMAGES/LOGO WEB V5.png">
+    <meta name="theme-color" content="#ffffff">
 </head>
 <body>
-    <a href="../index.html"><img src="../IMAGES/LOGO SOLO LETRAS 2V2-CP.avif" alt="Imagen logo de la web" width="300px"></a><br>
-    <img src="../IMAGES/Work in progres.png" alt="foto que indica trabajos de mantenimiento e la web">
+    <header>
+        <nav id="MENU_COMPARATIVAS" style="align-items: center;">
+            <a href="../index.html"><img src="../IMAGES\LOGO SOLO LETRAS 2V2-CP.avif" alt="Logo de la web PC_PART PICKER" width="300"></a>
+            <a href="../comparativas/comparativas.html"><p>COMPARATIVA</p></a>
+            <a href="../opciones-top/opciones-top.html"><p>OPCIONES TOP</p></a>
+            <a href="../enlaces/enlaces.html"><p>ENLACES</p></a>
+        </nav>
+    </header>
+    <br>
+    <!-- <img src="../IMAGES/Work in progres.png" alt="foto que indica trabajos de mantenimiento e la web"> !-->
 </body>
+<div>
+```html
+<form class="formulario">
+
+    <div class="formulario-cabecera">
+        <h2>Contacta con nosotros</h2>
+        <p>¿Tienes alguna duda? Escríbenos y te responderemos lo antes posible.</p>
+    </div>
+
+    <div class="campo">
+        <label for="nombre">Nombre</label>
+        <input 
+            type="text" 
+            id="nombre" 
+            name="nombre" 
+            placeholder="Introduce tu nombre"
+            required
+        >
+    </div>
+
+    <div class="campo">
+        <label for="primer-apellido">Primer apellido</label>
+        <input 
+            type="text" 
+            id="primer-apellido" 
+            name="primer-apellido" 
+            placeholder="Introduce tu primer apellido"
+            required
+        >
+    </div>
+
+    <div class="campo">
+        <label for="segundo-apellido">Segundo apellido</label>
+        <input 
+            type="text" 
+            id="segundo-apellido" 
+            name="segundo-apellido" 
+            placeholder="Introduce tu segundo apellido"
+        >
+    </div>
+
+    <div class="campo">
+        <label for="email">Correo electrónico</label>
+        <input 
+            type="email" 
+            id="email" 
+            name="email" 
+            placeholder="ejemplo@correo.com"
+            required
+        >
+    </div>
+
+    <div class="campo">
+        <label for="telefono">Teléfono</label>
+        <input 
+            type="tel" 
+            id="telefono" 
+            name="telefono" 
+            placeholder="+00 000 000 000"
+        >
+    </div>
+
+    <div class="campo">
+        <label for="asunto">Asunto</label>
+        <input 
+            type="text" 
+            id="asunto" 
+            name="asunto" 
+            placeholder="¿Sobre qué quieres hablar?"
+            required
+        >
+    </div>
+
+    <div class="campo">
+        <label for="mensaje">Mensaje</label>
+        <textarea 
+            id="mensaje" 
+            name="mensaje" 
+            rows="5" 
+            placeholder="Escribe aquí tu mensaje..."
+            required
+        ></textarea>
+    </div>
+
+    <button type="submit">
+        <span>Enviar mensaje</span>
+        <span class="flecha">→</span>
+    </button>
+
+</form>
+</div>
 </html>

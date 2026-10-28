@@ -2,3 +2,260 @@ body{
     background-image:url(../IMAGES/FONDO\ v3-CP.avif);
     background-size: 100% auto;
 }
+nav{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background-color: #00BFFF;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(8px);
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: 0.3s;
+}
+nav a:hover {
+    color: #00bfff;
+    text-shadow: 0 0 10px #00bfff;
+}
+
+
+
+/* =========================
+   FORMULARIO DE CONTACTO
+   ========================= */
+
+.formulario {
+    width: min(90%, 600px);
+    margin: 100px auto;
+    padding: 40px;
+
+    box-sizing: border-box;
+
+    background: rgba(5, 20, 40, 0.72);
+    border: 1px solid rgba(50, 150, 255, 0.35);
+    border-radius: 20px;
+
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+
+    box-shadow:
+        0 20px 60px rgba(0, 0, 0, 0.55),
+        0 0 35px rgba(0, 100, 255, 0.12);
+
+    color: white;
+
+    animation: aparecerFormulario 0.7s ease-out;
+}
+
+
+/* CABECERA */
+
+.formulario-cabecera {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.formulario-cabecera h2 {
+    margin: 0 0 10px;
+
+    font-size: 30px;
+    font-weight: 700;
+
+    color: white;
+
+    text-shadow:
+        0 0 10px rgba(0, 140, 255, 0.6);
+}
+
+.formulario-cabecera p {
+    margin: 0;
+
+    color: rgba(255, 255, 255, 0.65);
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+
+/* CAMPOS */
+
+.campo {
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 22px;
+}
+
+.campo label {
+    margin-bottom: 8px;
+
+    color: rgba(255, 255, 255, 0.9);
+
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+/* INPUTS Y TEXTAREA */
+
+.campo input,
+.campo textarea {
+    width: 100%;
+    box-sizing: border-box;
+
+    padding: 13px 15px;
+
+    background: rgba(0, 0, 0, 0.25);
+
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 9px;
+
+    outline: none;
+
+    color: white;
+
+    font-family: inherit;
+    font-size: 14px;
+
+    transition:
+        border 0.25s ease,
+        box-shadow 0.25s ease,
+        background 0.25s ease;
+}
+
+
+/* PLACEHOLDER */
+
+.campo input::placeholder,
+.campo textarea::placeholder {
+    color: rgba(255, 255, 255, 0.35);
+}
+
+
+/* CUANDO SE SELECCIONA UN CAMPO */
+
+.campo input:focus,
+.campo textarea:focus {
+    background: rgba(0, 80, 160, 0.15);
+
+    border-color: #1683ff;
+
+    box-shadow:
+        0 0 0 3px rgba(22, 131, 255, 0.12),
+        0 0 15px rgba(22, 131, 255, 0.18);
+}
+
+
+/* TEXTAREA */
+
+.campo textarea {
+    min-height: 140px;
+
+    resize: vertical;
+}
+
+
+/* BOTÓN */
+
+.formulario button {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    padding: 14px 20px;
+
+    margin-top: 5px;
+
+    border: none;
+    border-radius: 9px;
+
+    background: linear-gradient(
+        135deg,
+        #006eff,
+        #00a2ff
+    );
+
+    color: white;
+
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 5px 20px rgba(0, 110, 255, 0.25);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        filter 0.25s ease;
+}
+
+/* CHat GPT intervino, se desarrollará mas adelantes, esto solo para que no quede vacio */ 
+
+/* HOVER BOTÓN */
+
+.formulario button:hover {
+    transform: translateY(-2px);
+
+    filter: brightness(1.1);
+
+    box-shadow:
+        0 8px 25px rgba(0, 110, 255, 0.45);
+}
+
+
+/* FLECHA */
+
+.flecha {
+    font-size: 20px;
+
+    transition: transform 0.25s ease;
+}
+
+.formulario button:hover .flecha {
+    transform: translateX(5px);
+}
+
+
+/* ANIMACIÓN AL APARECER */
+
+@keyframes aparecerFormulario {
+
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+
+/* =========================
+   MÓVIL
+   ========================= */
+
+@media (max-width: 600px) {
+
+    .formulario {
+        width: 92%;
+        margin: 50px auto;
+        padding: 25px;
+    }
+
+    .formulario-cabecera h2 {
+        font-size: 25px;
+    }
+
+}
