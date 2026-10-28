@@ -1,0 +1,3 @@
+User-agent:*
+Allow:/
+sitemap:https://gamefortz.github.io/sitemap.xml
