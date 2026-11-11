@@ -1,6 +1,8 @@
 body{
-    background-image:url(../IMAGES/FONDO\ v3-CP.avif);
-    background-size: 100% auto;
+    background-image: url(../IMAGES/FONDO\ V3-CP.avif);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 a{
     color: white;

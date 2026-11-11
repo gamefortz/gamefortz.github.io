@@ -1,0 +1,137 @@
+body{
+    background-image: url(../IMAGES/FONDO\ V3-CP.avif);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+nav{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background-color: #00BFFF;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(8px);
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: 0.3s;
+}
+nav a:hover {
+    color: #00bfff;
+    text-shadow: 0 0 10px #00bfff;
+}
+p{
+    color: white;
+}
+h1{
+    color: #00BFFF;
+    text-shadow: 0 0 8px #008CFF;
+}
+h2{
+    color: white;
+}
+h3{
+    color: white;
+}
+hr{
+    color: #00BFFF;
+    text-shadow: 0 0 8px #008CFF;
+}
+.videos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    text-align: center;
+}
+
+.videos h3 {
+    color: white;
+    text-shadow: 0 0 8px #008CFF;
+}
+.video-grande {
+    display: flex;
+    justify-content: center;
+    margin: 30px auto;
+}
+
+.video-grande iframe {
+    width: 800px;
+    height: 450px;
+    border: none;
+}
+/* Ordenador */
+.video-grande iframe {
+    width: 800px;
+    height: 450px;
+}
+
+/* Móviles */
+@media (max-width: 600px) {
+    .video-grande iframe {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16 / 9;
+    }
+}
+/* Monitor 4:3 */
+@media (max-width:1280px) {
+    .video-grande iframe {
+        width: 60%;
+        height: 80%;
+        aspect-ratio: 4 / 3;
+    }
+}
+.menu {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+/* Tablets */
+@media (max-width: 900px) {
+    .menu {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Móviles */
+@media (max-width: 600px) {
+    .menu {
+        grid-template-columns: 1fr;
+    }
+}
+/* Monitores 4:3 y ordenadores pequeños */
+@media (min-width: 901px) and (max-width: 1280px) {
+    .menu {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+}.news-hw{
+    text-align: center;
+}
+/* Adaptación para monitores 4:3 */
+@media (min-width: 901px) and (max-width: 1280px) {
+    body {
+        zoom: 1;
+    }
+
+    .videos {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        width: 100%;
+        gap: 15px;
+    }
+
+    .videos iframe {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16 / 9;
+    }
+
+    .video-grande iframe {
+        width: 80%;
+        height: auto;
+        aspect-ratio: 16 / 9;
+    }
+}
