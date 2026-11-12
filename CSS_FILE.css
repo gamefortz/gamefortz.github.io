@@ -1,5 +1,5 @@
 body {
-    background-image: url(../IMAGES/FONDO\ V3-CP.avif);
+    background-image: url(IMAGES/FONDO\ v3-CP.avif);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -58,8 +58,20 @@ footer{
     backdrop-filter: blur(8px);
 
 }
-.lm:hover{
-background: rgba(255, 255, 255, 0.15);
+.lm {
+    position: relative;
+    display: inline-block;
+    border-radius: 999px;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+}
+
+.lm:hover {
+    background: transparent;
+    border-radius: 999px;
+    box-shadow: 
+        inset 0 0 0 1px rgba(255, 255, 255, 0.5),
+        0 0 15px rgba(255, 255, 255, 0.2);
 }
 a{
     text-align: center;
