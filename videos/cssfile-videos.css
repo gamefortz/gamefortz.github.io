@@ -67,6 +67,20 @@ hr{
     width: 800px;
     height: 450px;
 }
+.migas_de_pan{
+    color: #00BFFF;
+    text-shadow: 0 0 8px #008CFF;
+
+}
+.enlaces_migas{
+    text-decoration: none;
+    color: #00BFFF;
+    text-shadow: 0 0 8px #005fad;
+}
+.enlaces_migas:hover{
+    color: white;
+    text-shadow: 0 0 8px #008CFF;
+}
 
 /* Móviles */
 @media (max-width: 600px) {

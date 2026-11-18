@@ -79,3 +79,83 @@ a{
     padding: 30px;
     
 }
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+body {
+    min-width: 320px;
+}
+
+img, video {
+    max-width: 100%;
+    height: auto;
+}
+
+/* CONTENEDOR PRINCIPAL */
+.container {
+    width: min(100% - 40px, 1200px);
+    margin-inline: auto;
+}
+
+/* IMÁGENES Y BLOQUES */
+.contenido {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* TABLETS */
+@media (max-width: 900px) {
+    .container {
+        width: calc(100% - 30px);
+    }
+}
+
+/* MÓVILES */
+@media (max-width: 600px) {
+
+    body {
+        font-size: 14px;
+    }
+
+    .container {
+        width: calc(100% - 24px);
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    h2 {
+        font-size: 21px;
+    }
+
+    .contenido {
+        width: 100%;
+    }
+
+    /* Columnas: una debajo de otra */
+    .columnas {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Imágenes */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Botones */
+    button {
+        max-width: 100%;
+    }
+}
