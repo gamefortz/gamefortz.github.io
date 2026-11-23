@@ -1,0 +1,44 @@
+body{
+    background-image: url(../../IMAGES/adm-radeon-fondo.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+nav{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background: rgba(237, 28, 36, 0.12);
+    padding: 10px;
+    backdrop-filter: blur(8px);
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #ed1c24;
+    text-shadow: 0 0 10px #ed1c24;
+}
+
+.migas_de_pan{
+    color: #ed1c24;
+    text-shadow: 0 0 8px #b5121b;
+}
+.enlaces_migas{
+    text-decoration: none;
+    color: #ed1c24;
+    text-shadow: 0 0 8px #b5121b;
+}
+
+.enlaces_migas:hover{
+    color: white;
+    text-shadow: 0 0 8px #ed1c24;
+}
+#migas_pan{
+    display: inline-block;
+}

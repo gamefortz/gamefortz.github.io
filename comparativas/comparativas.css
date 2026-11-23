@@ -163,3 +163,56 @@ body:has(.tarjeta.amd:hover) {
 body:has(.tarjeta.nvidia:hover) {
     background-image: url("../IMAGES/nvidia-wallpaper.jpg");
 }
+#p_migas{
+    display: inline-block;
+}
+/* LOGO ORIGINAL */
+nav a:first-child {
+    position: relative;
+}
+
+nav a:first-child::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    pointer-events: none;
+}
+
+/* AMD - ROJO */
+body:has(.tarjeta.amd:hover) nav a:first-child::after {
+    background-image: url("../IMAGES/LOGO\ SOLO\ LETRAS\ 2V2-CP-radeon-amd-solopestnas-amd.avif");
+}
+
+/* NVIDIA - VERDE */
+body:has(.tarjeta.nvidia:hover) nav a:first-child::after {
+    background-image: url("../IMAGES/LOGO\ SOLO\ LETRAS\ 2V2-CP-radeon-amd-solopestnas-nvidia.avif");
+}
+
+/* OCULTAR LOGO ORIGINAL INSTANTÁNEAMENTE */
+body:has(.tarjeta:hover) nav a:first-child img {
+    visibility: hidden;
+}
+
+
+/* ================================= */
+/* MIGAS DE PAN DINÁMICAS */
+/* ================================= */
+
+/* AMD - ROJO */
+body:has(.tarjeta.amd:hover) .migas_de_pan,
+body:has(.tarjeta.amd:hover) .enlaces_migas {
+    color: #ed1c24;
+    text-shadow: 0 0 8px #ed1c24;
+}
+
+/* NVIDIA - VERDE */
+body:has(.tarjeta.nvidia:hover) .migas_de_pan,
+body:has(.tarjeta.nvidia:hover) .enlaces_migas {
+    color: #76b900;
+    text-shadow: 0 0 8px #76b900;
+}
+
+

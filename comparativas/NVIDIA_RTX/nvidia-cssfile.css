@@ -1,0 +1,547 @@
+body{
+    background-image: url(../../IMAGES/nvidia-wallpaper.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background: rgba(118, 185, 0, 0.12);
+    padding: 10px;
+    backdrop-filter: blur(8px);
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #76b900;
+    text-shadow: 0 0 10px #76b900;
+}
+
+/* MIGAS DE PAN */
+.migas_de_pan {
+    color: #76b900;
+    text-shadow: 0 0 8px #568900;
+}
+
+.enlaces_migas {
+    text-decoration: none;
+    color: #76b900;
+    text-shadow: 0 0 8px #568900;
+}
+
+.enlaces_migas:hover {
+    color: white;
+    text-shadow: 0 0 8px #76b900;
+}
+
+#migas_pan{
+    display: inline-block;
+}
+
+
+/* =========================================
+   CONTENEDOR GENERAL
+========================================= */
+
+.contenedor-graficas {
+    width: 94%;
+    max-width: 1900px;
+    margin: 35px auto;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+
+/* =========================================
+   SECCIONES
+========================================= */
+
+.generacion {
+    width: 100%;
+    margin-bottom: 40px;
+    padding: 28px;
+    box-sizing: border-box;
+
+    background: rgba(0, 0, 0, 0.42);
+    border: 1px solid rgba(118, 185, 0, 0.65);
+    border-radius: 15px;
+
+    box-shadow:
+        0 10px 35px rgba(0, 0, 0, 0.2),
+        inset 0 0 30px rgba(118, 185, 0, 0.025);
+}
+
+
+/* =========================================
+   CABECERAS
+========================================= */
+
+.cabecera-generacion {
+    text-align: center;
+    margin-bottom: 27px;
+}
+
+.etiqueta-serie {
+    display: inline-block;
+    margin-bottom: 8px;
+    color: #a0dc38;
+    font-size: 11px;
+    font-weight: 900;
+    letter-spacing: 4px;
+}
+
+.cabecera-generacion h2 {
+    margin: 0;
+    color: #8cff00;
+    font-size: clamp(25px, 3vw, 36px);
+    font-weight: 900;
+    letter-spacing: 1.5px;
+
+    text-shadow:
+        0 0 8px rgba(118, 185, 0, 0.5),
+        0 0 22px rgba(118, 185, 0, 0.2);
+}
+
+.cabecera-generacion p {
+    color: #e0e0e0;
+    margin: 9px 0 0;
+    font-size: 14px;
+}
+
+
+/* =========================================
+   TECNOLOGÍAS
+========================================= */
+
+.tecnologias {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 13px;
+    width: 100%;
+}
+
+.tecnologia {
+    position: relative;
+    min-width: 0;
+    min-height: 125px;
+    padding: 23px 12px 15px;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    overflow: hidden;
+
+    background: linear-gradient(
+        145deg,
+        rgba(20, 35, 4, 0.8),
+        rgba(0, 0, 0, 0.78)
+    );
+
+    border: 1px solid rgba(118, 185, 0, 0.5);
+    border-radius: 10px;
+    transition: 0.25s ease;
+}
+
+.numero-tecnologia {
+    position: absolute;
+    top: 8px;
+    left: 11px;
+    color: rgba(140, 255, 0, 0.4);
+    font-size: 10px;
+    font-weight: 900;
+}
+
+.tecnologia h3 {
+    color: #8cff00;
+    font-size: 14px;
+    font-weight: 900;
+    letter-spacing: 0.8px;
+    margin: 0 0 10px;
+}
+
+.tecnologia p {
+    color: #e7e7e7;
+    font-size: 12px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.tecnologia:hover {
+    transform: translateY(-4px);
+    background: #76b900;
+    border-color: #a4ff00;
+    box-shadow: 0 0 18px rgba(118, 185, 0, 0.35);
+}
+
+.tecnologia:hover h3,
+.tecnologia:hover p,
+.tecnologia:hover .numero-tecnologia {
+    color: #071000;
+}
+
+
+/* =========================================
+   TÍTULO DE MODELOS
+========================================= */
+
+.titulo-modelos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    margin: 32px 0 22px;
+}
+
+.titulo-modelos h3 {
+    color: #8cff00;
+    font-size: 19px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    margin: 0;
+    white-space: nowrap;
+}
+
+.titulo-modelos span {
+    flex: 1;
+    max-width: 250px;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, #76b900);
+}
+
+.titulo-modelos span:last-child {
+    transform: rotate(180deg);
+}
+
+
+/* =========================================
+   CUADRÍCULA DE TARJETAS
+========================================= */
+
+.rejilla-graficas {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+}
+
+
+/* =========================================
+   TARJETAS GPU
+========================================= */
+
+.tarjeta-nvidia {
+    position: relative;
+    min-width: 0;
+    min-height: 320px;
+    padding: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+
+    box-sizing: border-box;
+    overflow: hidden;
+
+    color: white !important;
+    text-decoration: none !important;
+
+    background: linear-gradient(
+        145deg,
+        rgba(10, 20, 0, 0.85),
+        rgba(0, 0, 0, 0.88)
+    );
+
+    border: 1px solid rgba(118, 185, 0, 0.55);
+    border-radius: 12px;
+
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.2);
+    transition: 0.3s ease;
+}
+
+
+/* IDENTIFICADOR */
+
+.etiqueta-gpu {
+    position: absolute;
+    z-index: 2;
+    top: 12px;
+    left: 13px;
+
+    padding: 5px 9px;
+
+    color: #a4df42;
+    background: rgba(0, 0, 0, 0.6);
+
+    border: 1px solid rgba(118, 185, 0, 0.4);
+    border-radius: 4px;
+
+    font-size: 9px;
+    font-weight: 900;
+    letter-spacing: 1.5px;
+}
+
+
+/* IMAGEN */
+
+.imagen-grafica {
+    position: relative;
+    width: 100%;
+    height: 230px;
+    padding: 20px;
+    box-sizing: border-box;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: radial-gradient(
+        ellipse at center,
+        rgba(118, 185, 0, 0.15),
+        transparent 72%
+    );
+
+    overflow: hidden;
+}
+
+.imagen-grafica img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+
+    filter: drop-shadow(0 8px 12px rgba(0, 0, 0, 0.5));
+    transition: 0.35s ease;
+}
+
+
+/* INFORMACIÓN */
+
+.informacion-grafica {
+    flex: 1;
+    min-height: 85px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 9px;
+    padding: 13px;
+    text-align: center;
+
+    border-top: 1px solid rgba(118, 185, 0, 0.2);
+}
+
+.informacion-grafica h3 {
+    color: #8cff00;
+    font-size: 23px;
+    font-weight: 900;
+    letter-spacing: 0.5px;
+    margin: 0;
+}
+
+.informacion-grafica span {
+    color: #b2df69;
+    font-size: 10px;
+    font-weight: 900;
+    letter-spacing: 1.3px;
+}
+
+.informacion-grafica span b {
+    font-size: 14px;
+    margin-left: 4px;
+}
+
+
+/* =========================================
+   HOVER NVIDIA
+========================================= */
+
+.tarjeta-nvidia:hover {
+    transform: translateY(-6px);
+
+    background: linear-gradient(
+        145deg,
+        #8bd000,
+        #76b900 55%,
+        #568900
+    );
+
+    border-color: #b7ff48;
+
+    box-shadow:
+        0 12px 30px rgba(118, 185, 0, 0.3),
+        0 0 18px rgba(118, 185, 0, 0.25);
+}
+
+.tarjeta-nvidia:hover .imagen-grafica {
+    background: radial-gradient(
+        ellipse at center,
+        rgba(255, 255, 255, 0.3),
+        transparent 75%
+    );
+}
+
+.tarjeta-nvidia:hover .imagen-grafica img {
+    transform: scale(1.08);
+}
+
+.tarjeta-nvidia:hover .informacion-grafica {
+    border-top-color: rgba(0, 0, 0, 0.15);
+}
+
+.tarjeta-nvidia:hover .informacion-grafica h3,
+.tarjeta-nvidia:hover .informacion-grafica span {
+    color: #071000;
+}
+
+.tarjeta-nvidia:hover .etiqueta-gpu {
+    color: #071000;
+    background: rgba(255, 255, 255, 0.25);
+    border-color: rgba(0, 0, 0, 0.2);
+}
+
+
+/* =========================================
+   EDICIONES ESPECIALES
+========================================= */
+
+.especiales {
+    border-color: rgba(140, 255, 0, 0.8);
+
+    background: linear-gradient(
+        145deg,
+        rgba(20, 35, 3, 0.6),
+        rgba(0, 0, 0, 0.65)
+    );
+}
+
+
+/* =========================================
+   TABLETS
+========================================= */
+
+@media (max-width: 1100px) {
+
+    .contenedor-graficas {
+        width: 95%;
+    }
+
+    .generacion {
+        padding: 22px;
+    }
+
+    .tecnologias {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .rejilla-graficas {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .tarjeta-nvidia {
+        min-height: 300px;
+    }
+}
+
+
+/* =========================================
+   MÓVILES
+========================================= */
+
+@media (max-width: 600px) {
+
+    .contenedor-graficas {
+        width: 94%;
+        margin: 20px auto;
+    }
+
+    .generacion {
+        padding: 15px;
+        margin-bottom: 25px;
+    }
+
+    .cabecera-generacion h2 {
+        font-size: 22px;
+    }
+
+    .etiqueta-serie {
+        font-size: 9px;
+        letter-spacing: 3px;
+    }
+
+    .cabecera-generacion p {
+        font-size: 12px;
+    }
+
+    .tecnologias {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+    }
+
+    .tecnologia {
+        min-height: 115px;
+        padding: 20px 8px 12px;
+    }
+
+    .tecnologia h3 {
+        font-size: 11px;
+    }
+
+    .tecnologia p {
+        font-size: 11px;
+    }
+
+    .titulo-modelos {
+        gap: 10px;
+        margin: 25px 0 18px;
+    }
+
+    .titulo-modelos h3 {
+        font-size: 14px;
+        letter-spacing: 1px;
+    }
+
+    .rejilla-graficas {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .tarjeta-nvidia {
+        min-height: 270px;
+    }
+
+    .imagen-grafica {
+        height: 190px;
+    }
+
+    .informacion-grafica h3 {
+        font-size: 21px;
+    }
+}
+
+
+/* =========================================
+   MÓVILES ESTRECHOS
+========================================= */
+
+@media (max-width: 370px) {
+
+    .tecnologias {
+        grid-template-columns: 1fr;
+    }
+
+}
